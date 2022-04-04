@@ -1,0 +1,189 @@
+/* Start My Frame Work */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
+
+.alert {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    z-index: 2
+}
+
+.alert.down {
+    top: 0
+}
+
+input {
+    outline: none
+}
+
+a {
+    text-decoration: none
+}
+
+:root {
+    --trans: .4s ease-in-out
+}
+
+::placeholder {
+    transition: var(--trans)
+}
+
+:focus::placeholder {
+    opacity: 0
+}
+
+input:focus {
+    border-bottom-color: #ff105f !important
+}
+
+/* End My Frame Work */
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.8)), url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.hero .form-box {
+    width: 360px;
+    height: 480px;
+    margin: 50px auto;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+@media(max-width:450px) {
+
+    .hero .form-box {
+        width: 320px
+    }
+
+    .alert{
+    font-size: 15px !important
+    }
+}
+
+
+.hero .form-box .btn-box {
+    width: 230px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+
+}
+
+.hero .form-box .btn-box button {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: relative
+}
+
+.hero .form-box .btn-box #btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: var(--trans);
+}
+
+.hero .form-box form {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    transition: var(--trans);
+    padding: 0 10px
+}
+
+#login {
+    left: 0
+}
+
+#login input {
+    padding: 22px 0
+}
+
+#login button {
+    position: relative;
+    top: 30px
+}
+
+#register {
+    left: 450px
+}
+
+#register input {
+    padding: 16px 0
+}
+
+.hero .form-box form input[type="text"],
+.hero .form-box form input[type="email"],
+.hero .form-box form input[type="password"] {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    background: transparent
+}
+
+.hero .form-box form button {
+    width: 85%;
+    cursor: pointer;
+    padding: 10px 30px;
+    display: block;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    margin: auto;
+    border: 0;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    transform: translateX(-1%)
+}
+
+.hero .form-box form input[type="checkbox"] {
+    margin: 30px 10px 30px 0
+}
+
+.hero .form-box form span {
+
+    color: #777;
+    font-size: 13px;
+    position: absolute;
+    bottom: 68px
+}
