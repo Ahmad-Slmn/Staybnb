@@ -27,7 +27,7 @@
                 <a href="form.html">register-now</a>
                 <i class="fas fa-bars"></i>
             </ul>
-          <i class="fa fa-arrow-up"></i>
+            <i class="fa fa-arrow-up"></i>
         </nav>
 
         <div class="container">
@@ -215,8 +215,21 @@
             <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
             <hr>
-            <p>copyright &copy; ahmedslmn116 2021</p>
+            <p>copyright &copy; ahmedslmn 2022</p>
         </footer>
     </div>
     <script src="js/main.js"></script>
+    <script>
+        document.querySelector("form button").onclick = function() {
+
+            if (document.querySelector('.loc-input input').value == "") {
+
+                document.querySelector('.loc-input input').focus();
+                return false
+
+            } else {
+                return true
+            }
+        }
+    </script>
 </body></html>
